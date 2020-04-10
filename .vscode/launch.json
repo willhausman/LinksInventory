@@ -10,14 +10,15 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/live-share/bin/Debug/netcoreapp2.2/live-share.dll",
+            "program": "${workspaceFolder}/LinksInventory.Web/bin/Debug/netcoreapp2.2/LinksInventory.Web.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/live-share",
+            "cwd": "${workspaceFolder}/LinksInventory.Web",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",
-                "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
+                "pattern": "^\\s*Now listening on:\\s+https?://\\S+",
+                "uriFormat": "https://localhost:5001/api/values"
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
